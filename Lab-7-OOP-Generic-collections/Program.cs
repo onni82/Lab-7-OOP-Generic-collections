@@ -55,6 +55,11 @@
 			{
 				Console.WriteLine("Employee number 3 exists in the Stack");
 			}
+
+			// PART 2 - LIST
+			// creates a new list
+			List<Employee> list = new List<Employee>();
+
 		}
 	}
 }
