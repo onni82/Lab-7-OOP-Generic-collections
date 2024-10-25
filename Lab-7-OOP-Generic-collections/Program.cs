@@ -59,6 +59,12 @@
 			// PART 2 - LIST
 			// creates a new list
 			List<Employee> list = new List<Employee>();
+			list.Add(new Employee(1, "Andrew", "male", 42000));
+			list.Add(new Employee(2, "Brenda", "female", 45000));
+			list.Add(new Employee(3, "Carl", "male", 37000));
+			list.Add(new Employee(4, "Diane", "female", 36000));
+			list.Add(new Employee(5, "Eric", "male", 38000));
+
 
 		}
 	}
