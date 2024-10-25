@@ -5,6 +5,7 @@
 		static void Main(string[] args)
 		{
 			Console.WriteLine("Hello, World!");
+			Stack<Employee> stack = new Stack<Employee>();
 		}
 	}
 }
