@@ -19,5 +19,10 @@ namespace Lab_7_OOP_Generic_collections
             Gender = gender;
             Salary = salary;
         }
+
+        public override string ToString()
+        {
+            return $"{Id} - {Name} - {Gender} - {Salary}";
+        }
     }
 }
