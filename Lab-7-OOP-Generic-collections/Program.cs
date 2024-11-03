@@ -5,7 +5,7 @@
 		static void Main(string[] args)
 		{
 			// PART 1 - STACK
-			Console.WriteLine($"PART 1 - STACK\n");
+			Console.WriteLine("PART 1 - STACK");
 			// creates a new stack
 			Stack<Employee> stack = new Stack<Employee>();
 
@@ -59,7 +59,7 @@
 
 			// PART 2 - LIST
 			// creates a new list
-			Console.WriteLine($"PART 2 - LIST\n");
+			Console.WriteLine("PART 2 - LIST");
 			List<Employee> list = new List<Employee>();
 			list.Add(new Employee(1, "Andrew", "male", 42000));
 			list.Add(new Employee(2, "Brenda", "female", 45000));
@@ -71,6 +71,10 @@
 			if (list.Contains(new Employee(2, "Brenda", "female", 45000)))
 			{
 				Console.WriteLine("\nEmployee 2 exists in the list");
+			}
+			else
+			{
+				Console.WriteLine("\nEmployee 2 does not exist in the list");
 			}
 
 			// use Find() to find the first male employee in the list
