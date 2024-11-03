@@ -24,5 +24,22 @@ namespace Lab_7_OOP_Generic_collections
         {
             return $"{Id} - {Name} - {Gender} - {Salary}";
         }
-    }
+
+		public override bool Equals(object obj)
+		{
+			if (obj == null || GetType() != obj.GetType())
+				return false;
+
+			Employee other = (Employee)obj;
+			return Id == other.Id &&
+				   Name == other.Name &&
+				   Gender == other.Gender &&
+				   Salary == other.Salary;
+		}
+
+		public override int GetHashCode()
+		{
+			return HashCode.Combine(Id, Name, Gender, Salary);
+		}
+	}
 }
